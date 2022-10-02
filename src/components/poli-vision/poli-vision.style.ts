@@ -163,6 +163,11 @@ export const Img = styled('img')`
     width: 100%;
 `;
 
+export const SwipeImg = styled('img')`
+    width: 60px;
+    display: flex;
+`;
+
 export const WaveImg = styled('img')`
    position: absolute;
     top: -30px;

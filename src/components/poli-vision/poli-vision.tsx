@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionWrapper, Img, Wrapper, TextDesc, TextTitle, WaveImg } from './poli-vision.style';
+import { SectionWrapper, Img, Wrapper, TextDesc, TextTitle, WaveImg, SwipeImg } from './poli-vision.style';
 import { ContentWrapper } from '../layout.style';
 
 import { observer } from 'mobx-react-lite';
@@ -12,8 +12,10 @@ import ThirdImage from './assets/3.png';
 import useWindowDimensions from 'state/getWindowDimensions';
 import Wave from './assets/wave.svg';
 import WaveMobile from './assets/waveMobile.svg';
+import Swipe from './assets/swipe.gif';
 
-export const CommissionPlan = observer((): JSX.Element =>{ 
+
+export const PoliVision = observer((): JSX.Element =>{ 
     const { height, width } = useWindowDimensions();
     return (
         <SectionWrapper >
@@ -21,7 +23,9 @@ export const CommissionPlan = observer((): JSX.Element =>{
             <WaveImg src={Wave} alt="Wave" /> :
             <WaveImg src={WaveMobile} alt="Wave mobile" /> }
             <ContentWrapper>
-            <Carousel interval={6000} swipeable={true} emulateTouch={true} autoPlay infiniteLoop  showArrows={false} showIndicators={true} showThumbs={false} showStatus={false}  
+
+                {/* {state.carouselStart ?  */}
+            <Carousel swipeable={true} emulateTouch={true}  showArrows={false} showIndicators={true} showThumbs={false} showStatus={false}  
       >
                 <Wrapper>
                     <TextTitle>Learn, Vote and Discuss</TextTitle>
@@ -40,7 +44,10 @@ export const CommissionPlan = observer((): JSX.Element =>{
                     <Img src={ThirdImage} />
                 </Wrapper>
                 
-            </Carousel>
+            </Carousel> 
+            <SwipeImg src={Swipe} alt="Swipe"/>
+
+            {/* : <Placeholder />} */}
             </ContentWrapper>
         </SectionWrapper>
     );});

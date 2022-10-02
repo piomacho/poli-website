@@ -1,6 +1,6 @@
 import React from 'react';
 import { Main } from '../main/main';
-import { CommissionPlan } from '../poli-vision/poli-vision';
+import { PoliVision } from '../poli-vision/poli-vision';
 import { MainWrapper } from './main-content.style';
 
 
@@ -10,7 +10,7 @@ export const MainContent = (): JSX.Element => {
         <MainWrapper>
             <Main />
 
-            <CommissionPlan/>
+            <PoliVision/>
         </MainWrapper>
     );
 };
