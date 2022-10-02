@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.carousel-slider {
+  padding-bottom: 30px;
+}
+.dot {
+  background: #282c34 !important;
+}
+
