@@ -166,6 +166,8 @@ export const Img = styled('img')`
 export const SwipeImg = styled('img')`
     width: 60px;
     display: flex;
+    margin: 0 auto;
+
 `;
 
 export const WaveImg = styled('img')`
