@@ -1,4 +1,5 @@
 import React from 'react';
+import { initializeApp } from "firebase/app";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import logo from './logo.svg';
@@ -13,10 +14,24 @@ import { Wrapper } from 'components/ScrollWrapper';
 
 
 function App() {
+  const firebaseConfig = {
+    apiKey: "AIzaSyDs1KAcZGOGRfZA4UgR1EZcFLg324Y1pIM",
+    authDomain: "poli-website-5c5a7.firebaseapp.com",
+    projectId: "poli-website-5c5a7",
+    storageBucket: "poli-website-5c5a7.appspot.com",
+    messagingSenderId: "288346354357",
+    appId: "1:288346354357:web:4598e0c2178f177c60c4fc"
+  };
 
+  const app = initializeApp(firebaseConfig);
 return (
     <Layout>
-        <Metadata />
+        <Metadata 
+           description="Poli Social politics"
+           keywords="politics"
+           lang="en"
+           title="Poli Social Politics"
+        />
    
         <Wrapper>
         <Routes>

@@ -17,7 +17,7 @@ const getWindowDimensions = () => {
 export const Main = observer((): JSX.Element => {
     const { height, width } = useWindowDimensions();
     const goToAppStore = () => {
-        window.location.href = 'https://apps.apple.com/us/app/twitter/id333903271';
+        window.location.href = 'https://apps.apple.com/gb/app/poli-social-politics/id1632966068';
     }
     return (
         <BackgroundWrapper>
@@ -29,7 +29,7 @@ export const Main = observer((): JSX.Element => {
                     </ArticleHeader>
                     <DownloadWrapper>
                         <Img src={AppleLogo} alt="App store logo" onClick={goToAppStore} />
-                        <QRCode size={width > 768 ? 100 : 60} value="https://apps.apple.com/us/app/twitter/id333903271"/>
+                        <QRCode size={width > 768 ? 100 : 60} value="https://apps.apple.com/gb/app/poli-social-politics/id1632966068"/>
                     </DownloadWrapper>
                    
                    
